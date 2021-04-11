@@ -32,6 +32,7 @@ export const init = (X: number, Y: number, aliveRatio = 0.25) => {
   for (let y = 0; y < Y; y++) {
     for (let x = 0; x < X; x++) {
 			bits.set(x, y, 0)
+			Math.floor(aliveRatio)
       // if (Math.random() < aliveRatio) {
       //   bits.set(x, y, 1)
       // }
