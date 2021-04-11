@@ -31,9 +31,10 @@ export const init = (X: number, Y: number, aliveRatio = 0.25) => {
   const bits = new BitTable(X, Y)
   for (let y = 0; y < Y; y++) {
     for (let x = 0; x < X; x++) {
-      if (Math.random() < aliveRatio) {
-        bits.set(x, y, 1)
-      }
+			bits.set(x, y, 0)
+      // if (Math.random() < aliveRatio) {
+      //   bits.set(x, y, 1)
+      // }
     }
   }
   return bits
