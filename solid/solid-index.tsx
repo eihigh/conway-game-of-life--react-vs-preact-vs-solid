@@ -89,6 +89,7 @@ const App = () => {
       <main>
         <World />
         <Controls />
+				<p>updated.</p>
       </main>
     </>
   )
